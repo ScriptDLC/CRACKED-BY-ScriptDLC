@@ -14,4 +14,4 @@ for _, v in pairs(game.CoreGui.RobloxPromptGui.promptOverlay:GetDescendants()) d
 end
 end
 
-custom_kick("Banned", "You were banned from this experience by the creator. Here's a message from the creator:\n\nMod Team has TEMP BANNED you! Unbanned in: 7652 days.\n(Error Code: 267)", "Leave")
+custom_kick("Disconnected", "You were banned from this experience by the creator. Here's a message from the creator:\n\nMod Team has TEMP BANNED you! Unbanned in: 7652 days.\n(Error Code: 267)", "Leave")
