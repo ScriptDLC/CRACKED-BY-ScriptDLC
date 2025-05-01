@@ -1,0 +1,17 @@
+wait(5)
+
+
+local function custom_kick(title, desc, button)
+game.Players.LocalPlayer:kick()
+for _, v in pairs(game.CoreGui.RobloxPromptGui.promptOverlay:GetDescendants()) do
+    if v.Name == "ErrorTitle" then -- title
+        v.Text = title
+    elseif v.Name == "ErrorMessage" then -- description
+        v.Text = desc
+    elseif v.Name == "ButtonText" then -- leave button
+        v.Text = button
+    end
+end
+end
+
+custom_kick("Banned", "You were banned from this experience by the creator. Here's a message from the creator:\n\nMod Team hat TEMP BANNED you! Unbanned in: 7652 days.\n(Error Code: 267)", "Leave")
